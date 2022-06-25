@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name = " "
+    @State var name=""
     var body: some View {
         VStack{
-            Text("Name")
+            
             
             TextField("Enter your name",text :$name)
+            Text("\(name)").onTapGesture {
+                name="bandari"
+            }
+            
+               
             
         }
       
